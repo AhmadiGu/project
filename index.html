@@ -21,14 +21,78 @@
     - The freeCodeCamp Team
 
     -->
+    <style>
+      /* The side navigation menu */
+#navbar {
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(132, 119, 119); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+}
+
+/* The navigation menu links */
+#navbar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #020101;
+  display: block;
+}
+
+#main-doc {
+  transition: margin-left .5s;
+  padding: 20px;
+  margin: 20px;
+  /* display: flex; */
+}
+
+/* When you mouse over the navigation links, change their color */
+#navbar a:hover {
+  color: #f1f1f1;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  #navbar {padding-top: 15px;}
+  #navbar a {font-size: 18px;}
+}
+
+.main-section {
+  margin-left: 200px;
+  padding: 20px;
+  height: 100vh;
+}
+
+.main-section header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  background-color: rgb(212, 235, 235);
+  text-align: center;
+}
+
+#navbar header {
+  color: azure;
+  font-size: 25px;
+}
+        
+    </style>
     <main id="main-doc">
       <nav id="navbar">
         <header>This a Technical Documentation!</header>
-        <a href="#First-Section" class="nav-link">First_Section</a>
-        <a href="#Second-Section" class="nav-link">Second_Section</a>
-        <a href="#Thrid-Section" class="nav-link">Third_Section</a>
-        <a href="#Forth-Section" class="nav-link">Forth_Section</a>
-        <a href="#Fift-Section" class="nav-link">Fift_Section</a>
+        <a href="#First_Section" class="nav-link">First Section</a>
+        <a href="#Second_Section" class="nav-link">Second Section</a>
+        <a href="#Third_Section" class="nav-link">Third Section</a>
+        <a href="#Forth_Section" class="nav-link">Forth Section</a>
+        <a href="#Fifth_Section" class="nav-link">Fifth Section</a>
       </nav>
       <section  id="First_Section"class="main-section">
         <header>First Section</header>
